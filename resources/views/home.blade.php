@@ -53,5 +53,8 @@
             @empty
             <div class="text-gray-300 text-2xl flex justify-center items-center">Aucun Article Disponible</div>
         @endforelse
+        <div class="flex justify-center mt-2">
+            {{$articles->links()}}
+        </div>
     </div>
 @endsection
