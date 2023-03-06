@@ -5,9 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('../css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('../css/app.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>LaraBlog</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    textColor: {
+                        primary: "#00855D",
+                        secondary: "#C97A00",
+                        third: "#023369"
+                    },
+                    backgroundColor: {
+                        primary: "#00855D",
+                        secondary: "#C97A00"
+                    },
+                },
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -25,7 +42,9 @@
                         <li class="ml-4 text-white text-lg cursor-pointer">New Post</li>
                     </a>
                     <li class="ml-4 text-white text-lg cursor-pointer">Profile</li>
-                <a href="/logout"><li class="ml-4 text-white text-lg cursor-pointer">Log Out</li></a>
+                    <a href="/logout">
+                        <li class="ml-4 text-white text-lg cursor-pointer">Log Out</li>
+                    </a>
                 @else
                     <a href="/register">
                         <li class="ml-4 text-white text-lg cursor-pointer">Register</li>
