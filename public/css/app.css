@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Tilt+Neon&display=swap");
+
+.logo {
+    font-family: "Gloock", serif;
+}
+.items
+{
+    font-family: "tilt neon";
+}
+
+.list-card{
+    transition: 1.2s;
+}
